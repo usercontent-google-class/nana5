@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 <link rel="stylesheet" href="./style.css"/>
 <!-- Yandex Games SDK -->
-<script src="/sdk.js"></script>
+<script src="v2.02c5b63d689c6bc2f83c.js"></script>
 <style>
         /* Убираем выделение по нажатию клавиш */
         canvas:focus {
@@ -149,6 +149,8 @@
                 return true;
             else return false;
         }
+
+        setTimeout(StartUnityInstance_IfUnloaded, 5000);
 
         InitYSDK();
         async function InitYSDK() {
